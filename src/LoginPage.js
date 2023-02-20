@@ -1,8 +1,12 @@
 import React from 'react';
+import './LoginPage.css';
+
 
 const LoginPage = () => {
+  
     const message=()=>
     {
+      
         console.log(" Login Successfull");
     }
      return (
@@ -29,7 +33,7 @@ const LoginPage = () => {
           ><input id="password2" name="password2" type="password" />
           <div class="error"></div>
         </div>
-         <button type="submit" onSubmit={message}>Sign Up</button> 
+         <button type="submit" onSubmit={message()}>Sign Up</button> 
       </form>
     </div>
      );
